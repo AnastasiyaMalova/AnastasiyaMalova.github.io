@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Uber</title>
+    <link rel="shortcut icon" href="/icons/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
@@ -19,27 +20,33 @@
             <div class="container">
                 <ul class="menu">
                     <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Со своим автомобилем</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">На автомобиле компании</a></li>
-                    <li class="menu_item"><a href="#" class="menu_link">Требования</a></li>
+                    <li class="menu_item"><a href="#conditions" class="menu_link">Со своим автомобилем</a></li>
+                    <li class="menu_item"><a href="#conditions" class="menu_link">На автомобиле компании</a></li>
+                    <li class="menu_item"><a href="#require" class="menu_link">Требования</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Оставить заявку</a></li>
                 </ul>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </nav>
         <div class="subheader">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 offset-md-1">
+                    <div class="col-6 col-md-4 offset-md-1">
                         <a href="#" class="subheader_logo"><img src="icons/UberLogo.png" alt=""></a>
                         <div class="subheader_official">Официальный партнер Uber в Москве</div>
                     </div>
-                    <div class="col-md-2 offset-md-2">
+                    <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
                         <div class="subheader_call"> Звоните нам ежедневно
                             <a href="tel:84957970988" class="subheader_phone">8 495 797 09 88</a>
                         </div>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-6 col-md-3 col-xl-2">
+                        <a href="tel:84957970988" class="xs-visible subheader_phone">8 495 797 09 88</a>
                         <button class="subheader_btn">заказать звонок</button>
                     </div>
                 </div>
@@ -49,7 +56,7 @@
     <section class="promo">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 offset-md-1">
+                <div class="col-md-12 offset-md-0 col-xl-10 offset-xl-1">
                     <h1 class="promo_header">КОМПАНИЯ UBER PARTNERS!</h1>
                     <h2 class="promo_subheader">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
                     <div class="promo_descr">
@@ -166,37 +173,37 @@
             <div class="subtitle">Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный
                 телефон</div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 col-xl-4">
                     <div class="mobile_item mobile_item_1">
                         <div class="mobile_subtitle">оформление заказа одним касанием</div>
                         <div class="mobile_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-xl-4">
                     <div class="mobile_item mobile_item_2">
                         <div class="mobile_subtitle">надежная подача</div>
                         <div class="mobile_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-xl-4">
                     <div class="mobile_item mobile_item_3">
                         <div class="mobile_subtitle">прозрачные цены</div>
                         <div class="mobile_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-xl-4">
                     <div class="mobile_item mobile_item_4">
                         <div class="mobile_subtitle">безналичная оплата</div>
                         <div class="mobile_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-xl-4">
                     <div class="mobile_item mobile_item_5">
                         <div class="mobile_subtitle">обратная связь</div>
                         <div class="mobile_plus"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-xl-4">
                     <div class="mobile_item mobile_item_6">
                         <div class="mobile_subtitle">разделить стоимость поездки</div>
                         <div class="mobile_plus"></div>
@@ -206,15 +213,17 @@
         </div>
     </section>
     <section class="possibilities">
-        <button class="label label_white">Возможности</button>
-        <div class="title title_white">Выбор - отличная штука!</div>
-        <div class="subtitle subtitle_white">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
-        <img src="img/black_car.png" alt="car" class="black_car">
-        <div class="black"></div>
-        <div class="white_subtitle">Машины на каждый день.<br> Лучше, быстрее и дешевле, чем такси</div>
+        <div class="container">
+            <button class="label label_white">Возможности</button>
+            <div class="title title_white">Выбор - отличная штука!</div>
+            <div class="subtitle subtitle_white">Закажите автомобиль, который подходит вам по стилю и бюджету</div>
+            <img src="img/black_car.png" alt="car" class="black_car">
+            <div class="black"></div>
+            <div class="white_subtitle">Машины на каждый день.<br> Лучше, быстрее и дешевле, чем такси</div>
+            </div>
         </div>
     </section>
-    <section class="conditions">
+    <section class="conditions" id="conditions">
         <div class="container">
             <button class="label">возможности</button>
             <div class="title">условия и требования</div>
@@ -245,8 +254,8 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="conditions_block conditions_block_nomgn require">
-                        <div class=conditions_title>ТРЕБОВАНИЕ:</div>
+                    <div class="conditions_block conditions_block_nomgn require" id="require">
+                      <div class=conditions_title>ТРЕБОВАНИЕ:</div>
                         <ul class="conditions_list">
                             <li>Наличие автомобиля без рекламы</li>
                             <li>Автомобиль не должен быть желтый и не с желтыми номерами</li>
@@ -259,14 +268,14 @@
                 <div class="col-md-6">
                     <div class="conditions_block conditions_block_nomgn require">
                         <div class=conditions_title>ДОКУМЕНТЫ:</div>
-                       <ul class="conditions_list">
-                           <li>Права 2 стороны</li>
-                           <li>Паспорт лицевая сторона</li>
-                           <li>СтС</li>
-                           <li>Лицензия(если есть)</li>
-                           <li>Номер телефона</li>
-                           <li>Номер карты для перечисления денег(указать в письме)!</li>
-                       </ul>
+                            <ul class="conditions_list">
+                                <li>Права 2 стороны</li>
+                                <li>Паспорт лицевая сторона</li>
+                                <li>СтС</li>
+                                <li>Лицензия(если есть)</li>
+                                <li>Номер телефона</li>
+                                <li>Номер карты для перечисления денег(указать в письме)!</li>
+                            </ul>
                     </div>
                 </div>
             </div>
@@ -307,6 +316,7 @@
         </div>
         <a class="footer_language" href="">русский</a>
     </footer>
+<script src="js/main.js"></script>
 </body>
 
 </html>
