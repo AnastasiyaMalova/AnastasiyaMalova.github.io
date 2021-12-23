@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Заголовок страницы -->
+   <title>Thousand sunny</title>
+   <!-- Подключаем необходимые шрифты с сервиса google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+   <!-- Подключаем Bootstrap версии 4.6.1 -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+   <!-- Подключаем файл со стилями -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <!-- фиксированное меню navbar -->
+   <nav class="navbar navbar-expand-lg fixed-top">
+      <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="logo"></a>
+      <div class="navbar-collapse">
+         <ul class="navbar-nav mr-4">
+            <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Destinations</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Partner</a></li>
+            <li class="nav-item">
+               <div class="buttons">
+                  <a href="#" class="btn btn-orange-outline">Login</a>
+                  <a href="#" class="btn btn-orange">Register</a>
+               </div>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <!-- блок header -->
+   <header class="header">
+      <div class="header-content">
+         <h1 class="header-title">Explore and
+            Travel</h1>
+         <h3 class="finder-title">Holiday finder</h3>
+         <div class="finder-divider"></div>
+         <!-- форма -->
+         <form class="finder-form">
+            <select>
+               <option style="font-size:12px">Location</option>
+               <option style="font-size:14px">Europe</option>
+               <option>Africa</option>
+               <option>Asia</option>
+               <option>Antarctica</option>
+               <option>America</option>
+            </select>
+            <select>
+               <option>Activity</option>
+               <option>Adventure Travel</option>
+               <option>Art And Culture</option>
+               <option>Wildlife And Nature</option>
+               <option>Family Holidays</option>
+               <option>Food And Drink</option>
+            </select>
+            <select>
+               <option>Grade</option>
+               <option>easy</option>
+               <option>medium</option>
+               <option>hard</option>
+            </select>
+            <select>
+               <option>Date</option>
+               <option>13.12-19.12</option>
+               <option>20.12-26.12</option>
+               <option>27.12-02.01</option>
+               <option>03.12-09.12</option>
+            </select>
+         </form>
+         <a href=" #" class="btn btn-lg btn-orange">Explore</a>
+      </div>
+      <div class="header-img"><img src="images/header-img.png" alt="header img"></div>
+   </header>
+   <!-- секция explore -->
+   <section class="explore">
+      <div class="container">
+         <div class="row">
+            <div class="col-7">
+               <img class="explore-img" src="images/explore-img.png" alt="explore img" class="explore-img">
+            </div>
+            <div class="col-5">
+               <div class="explore-wrapper">
+                  <h2 class="title explore-title">A new way to explore the world </h2>
+                  <p class="text explore-text">For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect
+                     trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+                  <a href="#" class="btn btn-md btn-orange">Learn more</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- секция destinations -->
+   <section class="destinations">
+      <div class="container">
+         <div class="row destinations-row">
+            <div class="col-10">
+               <h2 class="title">Featured destinations</h2>
+            </div>
+            <div class="col-2 text-right"><a href="#" class="link
+               ">View all ></a></div>
+         </div>
+         <div class="row">
+            <div class="col-3">
+               <div class="destinations-item">
+                  <img src="images/Raja.jpg" alt="Raja">
+                  <div class="destinations-name">
+                     Raja Ampat
+                     <span class="destinations-country">Indonesia</span>
+                  </div>
+               </div>
+            </div>
+            <div class="col-3">
+               <div class="destinations-item">
+                  <img src="images/Fanjingshan.jpg" alt="Fanjingshan">
+                  <div class="destinations-name">
+                     Fanjingshan
+                     <span class="destinations-country">China</span>
+                  </div>
+               </div>
+            </div>
+            <div class="col-3">
+               <div class="destinations-item">
+                  <img src="images/vevey.jpg" alt="vevey">
+                  <div class="destinations-name">Vevey
+                     <span class="destinations-country">Switzerland</span>
+                  </div>
+               </div>
+            </div>
+            <div class="col-3">
+               <div class="destinations-item">
+                  <img src="images/skadar.jpg" alt="skadar">
+                  <div class="destinations-name">Skadar
+                     <span class="destinations-country">Montenegro</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- секция guides -->
+   <section class="guides">
+      <div class="container">
+         <div class="row">
+            <div class="col-5">
+               <h2 class="title guides-title">Guides by Thousand
+                  Sunny</h2>
+               <p class="guides-text text">Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.</p>
+               <a href="#" class="btn btn-orange btn-md">Download</a>
+            </div>
+            <div class="col-7">
+               <img src="images/guides-img.png" alt="guides img" class="guides-img">
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- секция testimonials -->
+   <section class="testimonials">
+      <div class="container">
+         <div class="row">
+            <div class="col-5">
+               <h2 class="title testimonials-title">Testimonials</h2>
+               <div class="rate">
+                  <img src="images/star.png" alt="star">
+                  <img src="images/star.png" alt="star">
+                  <img src="images/star.png" alt="star">
+                  <img src="images/star.png" alt="star">
+                  <img src="images/star.png" alt="star">
+               </div>
+               <p class="testimonials-review">
+                  “Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”
+               </p>
+               <h5 class="author-name">Edward Newgate</h5>
+               <span class="author-position">Founder Circle</span>
+            </div>
+            <div class="col-7">
+               <div class="testimonials-item">
+                  <img src="images/photo.png" alt="photo" class="testimonials-photo">
+                  <div class="testimonials-buttons">
+                     <div class="button-prev">
+                        < </div>
+                           <div class="button-next  button-active">
+                              > </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </section>
+   <!-- секция stories -->
+   <section class="stories">
+      <div class="container">
+         <div class="row stories-row">
+            <div class="col-10">
+               <h2 class="title">Trending stories</h2>
+            </div>
+            <div class="col-2 text-right">
+               <a href="#" class="link
+                  ">View all ></a>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-3">
+               <div class="story">
+                  <img src="images/story_1.png" alt="" class="story-img">
+                  <h4 class="story-title">The many benefits of
+                     taking a healing holiday</h4>
+                  <p class="story-text">‘Helaing holidays’ are on the rise
+                     tohelp maximise your health and happines...
+                  </p>
+                  <a href="#" class="link story-link">Read more</a>
+               </div>
+            </div>
+            <div class="col-3">
+               <div class="story">
+                  <img src="images/story_2.png" alt="" class="story-img">
+                  <h4 class="story-title">The best Kyoto restaurant
+                     to try Japanese food</h4>
+                  <p class="story-text">From tofu to teahouses, here’s our guide to Kyoto’s best restaurants
+                     to visit...</p>
+                  <a href="#" class="link story-link">Read more</a>
+               </div>
+            </div>
+            <div class="col-3">
+               <div class="story">
+                  <img src="images/story_3.png" alt="" class="story-img">
+                  <h4 class="story-title">Skip Chichen Itza and head
+                     to this remote Yucatan</h4>
+                  <p class="story-text">It’s remote and challenging to get,
+                     but braving the jungle and exploring
+                     these ruins without the...s</p>
+                  <a href="#" class="link story-link">Read more</a>
+               </div>
+            </div>
+            <div class="col-3">
+               <div class="story">
+                  <img src="images/story_4.png" alt="" class="story-img">
+                  <h4 class="story-title">Surf’s up at these beginner
+                     spots around the world</h4>
+                  <p class="story-text">If learning to surf has in on your to-
+                     do list for a while, the good news
+                     is: it’s never too late...</p>
+                  <a href="#" class="link story-link">Read more</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+   </section>
+   <!-- блок footer -->
+   <footer class="footer">
+      <div class="footer-wrapper">
+         <div class="footer-left">
+            <a class="footer-logo" href="#"><img src="./images/logo.png" alt="logo"></a>
+            <p class="text footer-text">Plan and book your perfect trip with
+               expert advice, travel tips destination
+               information from us</p>
+            <p class="text footer-copyright">©2020 Thousand Sunny. All rights reserved</p>
+         </div>
+         <div class="footer-col">
+            <h4 class="footer-category">Destinations</h4>
+            <ul class="footer-list">
+               <li class="footer-item">Africa</li>
+               <li class="footer-item">Antarctica</li>
+               <li class="footer-item">Asia</li>
+               <li class="footer-item">Europe</li>
+               <li class="footer-item">America</li>
+            </ul>
+         </div>
+         <div class="footer-col">
+            <h4 class="footer-category">Shop</h4>
+            <ul class="footer-list">
+               <li class="footer-item">Destination</li>
+               <li class="footer-item">Pictorial & Gifts</li>
+               <li class="footer-item">Special Offers</li>
+               <li class="footer-item">Delivery Times</li>
+               <li class="footer-item">FAQs</li>
+            </ul>
+         </div>
+         <div class="footer-col">
+            <h4 class="footer-category">Interests</h4>
+            <ul class="footer-list">
+               <li class="footer-item">Adventure Travel</li>
+               <li class="footer-item">Art And Culture</li>
+               <li class="footer-item">Wildlife And Nature</li>
+               <li class="footer-item">Family Holidays</li>
+               <li class="footer-item">Food And Drink</li>
+            </ul>
+         </div>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-social">
+         <img src="images/social/twitter.png" alt="twitter">
+         <img src="images/social/facebook.png" alt="facebook">
+         <img src="images/social/instagram.png" alt="instagram">
+         <img src="images/social/linkedin.png" alt="linkedin">
+         <img src="images/social/youtube.png" alt="youtube">
+      </div>
+   </footer>
+</body>
+
+</html>

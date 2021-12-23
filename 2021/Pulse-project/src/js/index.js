@@ -22,48 +22,64 @@
 
 //tiny slider 2
 const slider = tns({
-    container: '.carousel__inner',
-    items: 1,
-    slideBy: 'page',
-    autoplay: false,
-    controls: false,
-    navPosition: 'bottom',
-    nav: true,
-    responsive: {
-        
-        700: {
-            nav: true
-        },
-        1200: {
-            nav: false
-        },
-      }
+   container: '.carousel__inner',
+   items: 1,
+   slideBy: 'page',
+   autoplay: false,
+   controls: false,
+   navPosition: 'bottom',
+   nav: true,
+   responsive: {
+
+      700: {
+         nav: true
+      },
+      1200: {
+         nav: false
+      },
+   }
 });
 
 document.querySelector('.prev').addEventListener('click', function () {
-    slider.goTo('prev');
+   slider.goTo('prev');
 });
 
 document.querySelector('.next').addEventListener('click', function () {
-    slider.goTo('next');
+   slider.goTo('next');
 });
 
-$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
-    $(this)
-        .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
-        .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
-    });
+$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
+   $(this)
+      .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
+      .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
+});
 
 toggleSlide('.catalog-item__link');
 toggleSlide('.catalog-item__back');
 
 
 function toggleSlide(link) {
-    $(link).each(function(i) {
-        $(this).on('click', function(e) {
-            e.preventDefault();
-            $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-            $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
-        })
-    })
+   $(link).each(function (i) {
+      $(this).on('click', function (e) {
+         e.preventDefault();
+         $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
+         $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+      })
+   })
 }
+
+// modal
+// выбор элементов по атрибутам
+$('[data-modal="consultation').on('click', () => {
+   $('.overlay, #consultation').fadeIn();
+});
+$('.modal__close').on('click', () => {
+   $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+});
+$('.button_mini').each((i) => {
+   $(this).on('click', () => {
+      // С помощью функции text подставляем название товара,на который мы нажали (catalog-item__subtitle) в modal__descr
+      $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text()); /* eq позволяет получить определенный элемент по порядку*/
+      $('.overlay, #order').fadeIn('slow');
+   });
+});
