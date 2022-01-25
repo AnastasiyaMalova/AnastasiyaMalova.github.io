@@ -44,7 +44,7 @@ a {
    font-size: 15px;
 }
 
-.btn:nth-child(2) {
+.btn:not(:last-child) {
    margin-left: 18px;
 }
 
@@ -476,3 +476,5 @@ select:nth-child(2n+1) {
    display: flex;
    justify-content: space-between;
 }
+
+@import 'media.css';

@@ -23,19 +23,17 @@
 //tiny slider 2
 const slider = tns({
    container: '.carousel__inner',
+   autoplay: true,
+   autoplayButtonOutput: false,
+   autoplayHoverPause: true,
+   arrowKeys: true,
    items: 1,
    slideBy: 'page',
-   autoplay: false,
    controls: false,
    navPosition: 'bottom',
-   nav: true,
    responsive: {
-
-      700: {
-         nav: true
-      },
-      1200: {
-         nav: false
+      767: {
+         nav: false,
       },
    }
 });
@@ -76,7 +74,7 @@ $('[data-modal="consultation').on('click', () => {
 $('.modal__close').on('click', () => {
    $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
 });
-$('.button_mini').each((i) => {
+$('.button_mini').each(function (i) {
    $(this).on('click', () => {
       // С помощью функции text подставляем название товара,на который мы нажали (catalog-item__subtitle) в modal__descr
       $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text()); /* eq позволяет получить определенный элемент по порядку*/
