@@ -1,0 +1,10 @@
+[33m54d005d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m HEAD@{0}: reset: moving to HEAD
+[33m54d005d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m HEAD@{1}: reset: moving to HEAD
+[33m54d005d[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m HEAD@{2}: pull: Merge made by the 'recursive' strategy.
+[33m0e1eb57[m HEAD@{3}: commit: change
+[33mf264706[m HEAD@{4}: commit: add thousand sunny
+[33mbe5a188[m HEAD@{5}: revert: Revert "add main.js"
+[33mfc74ac9[m HEAD@{6}: commit: add main.js
+[33md79af04[m HEAD@{7}: pull: Fast-forward
+[33mc7a9214[m HEAD@{8}: commit: add projects
+[33me780f4d[m HEAD@{9}: clone: from https://github.com/AnastasiyaMalova/AnastasiyaMalova.github.io.git
